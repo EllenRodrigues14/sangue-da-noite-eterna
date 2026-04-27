@@ -1,0 +1,260 @@
+    @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=EB+Garamond:wght@400;500;700&display=swap');
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, rgba(110, 0, 0, 0.35), transparent 35%),
+        linear-gradient(180deg, #080607 0%, #14090b 45%, #050505 100%);
+    color: #eadfce;
+    font-family: 'EB Garamond', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    }
+
+    #app {
+    width: 100%;
+    max-width: 920px;
+    }
+
+    .card {
+    display: none;
+    width: 100%;
+    background:
+        linear-gradient(180deg, rgba(18, 10, 11, 0.96), rgba(5, 5, 5, 0.96));
+    border: 1px solid rgba(190, 68, 68, 0.55);
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow:
+        0 0 32px rgba(120, 0, 0, 0.45),
+        inset 0 0 40px rgba(80, 0, 0, 0.18);
+    }
+
+    .tela-ativa {
+    display: block;
+    }
+
+    .ornamento {
+    text-align: center;
+    color: #b64242;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px #8b0000;
+    }
+
+    h1,
+    h2,
+    h3 {
+    font-family: 'Uncial Antiqua', cursive;
+    color: #c95151;
+    text-shadow: 0 0 8px rgba(180, 0, 0, 0.65);
+    }
+
+    h1 {
+    font-size: clamp(2.3rem, 7vw, 4.5rem);
+    text-align: center;
+    margin-bottom: 14px;
+    }
+
+    .subtitulo {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #d8c6b0;
+    margin-bottom: 32px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #f0ddc6;
+    }
+
+    input {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(185, 76, 76, 0.7);
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff3e3;
+    font-size: 1.2rem;
+    outline: none;
+    margin-bottom: 22px;
+    }
+
+    input:focus {
+    box-shadow: 0 0 18px rgba(185, 40, 40, 0.45);
+    }
+
+    button {
+    border: none;
+    border-radius: 14px;
+    padding: 14px 20px;
+    background: linear-gradient(180deg, #8b2a2a, #4d1111);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: 'EB Garamond', serif;
+    }
+
+    button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(190, 30, 30, 0.55);
+    }
+
+    button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+    }
+
+    .botao-secundario {
+    background: linear-gradient(180deg, #3b3030, #171313);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .botao-pequeno {
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    }
+
+    .botoes-iniciais {
+    display: grid;
+    gap: 12px;
+    }
+
+    .topo-jogo {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    }
+
+    #tituloCapitulo {
+    font-size: 1.8rem;
+    }
+
+    #subtituloCapitulo {
+    color: #bfae9a;
+    margin-top: 6px;
+    }
+
+    #painelStatus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+    }
+
+    #painelStatus div {
+    background: rgba(0, 0, 0, 0.42);
+    border: 1px solid rgba(180, 70, 70, 0.3);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    }
+
+    #painelStatus span {
+    display: block;
+    color: #af9d8b;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    }
+
+    #painelStatus strong {
+    color: #fff1df;
+    font-size: 1.1rem;
+    }
+
+    #textoJogo {
+    min-height: 230px;
+    padding: 22px;
+    border-radius: 18px;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.58));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #efe2cf;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    white-space: pre-wrap;
+    margin-bottom: 22px;
+    }
+
+    #opcoes {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 22px;
+    }
+
+    #opcoes button {
+    text-align: left;
+    font-size: 1.1rem;
+    background:
+        linear-gradient(90deg, rgba(112, 24, 24, 0.95), rgba(47, 11, 11, 0.95));
+    border: 1px solid rgba(255, 150, 150, 0.12);
+    }
+
+    #inventarioBox {
+    background: rgba(0, 0, 0, 0.38);
+    border: 1px solid rgba(190, 68, 68, 0.24);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 18px;
+    }
+
+    #inventarioBox h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    }
+
+    #inventarioTexto {
+    color: #d8c7b3;
+    }
+
+    .rodape-jogo {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    @media (max-width: 720px) {
+    body {
+        padding: 14px;
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .topo-jogo {
+        flex-direction: column;
+    }
+
+    #painelStatus {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #textoJogo {
+        font-size: 1.1rem;
+        min-height: 200px;
+    }
+
+    .rodape-jogo {
+        justify-content: stretch;
+    }
+
+    .rodape-jogo button {
+        width: 100%;
+    }
+    }

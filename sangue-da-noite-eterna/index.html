@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sangue da Noite Eterna</title>
+
+    <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+    <main id="app">
+
+        <section id="telaInicial" class="card tela-ativa">
+        <div class="ornamento">◆</div>
+
+        <h1>Sangue da Noite Eterna</h1>
+
+        <p class="subtitulo">
+            Um RPG narrativo de sombras, sangue antigo e escolhas perigosas.
+        </p>
+
+        <label for="nomeHeroi">Nome do herói</label>
+
+        <input
+            type="text"
+            id="nomeHeroi"
+            placeholder="Digite seu nome..."
+            maxlength="24"
+        />
+
+        <div class="botoes-iniciais">
+            <button id="btnNovoJogo">Iniciar nova aventura</button>
+            <button id="btnContinuar" class="botao-secundario">Continuar</button>
+        </div>
+        </section>
+
+        <section id="telaJogo" class="card">
+        <header class="topo-jogo">
+            <div>
+            <h2 id="tituloCapitulo">Carregando...</h2>
+            <p id="subtituloCapitulo">A aventura começa...</p>
+            </div>
+
+            <button id="btnNarracao" class="botao-pequeno">Narração: ON</button>
+        </header>
+
+        <div id="painelStatus">
+            <div>
+            <span>Herói</span>
+            <strong id="statusNome">---</strong>
+            </div>
+
+            <div>
+            <span>Vida</span>
+            <strong id="statusVida">100</strong>
+            </div>
+
+            <div>
+            <span>Mana</span>
+            <strong id="statusMana">50</strong>
+            </div>
+
+            <div>
+            <span>Corrupção</span>
+            <strong id="statusCorrupcao">0</strong>
+            </div>
+        </div>
+
+        <article id="textoJogo"></article>
+
+        <div id="opcoes"></div>
+
+        <aside id="inventarioBox">
+            <h3>Inventário</h3>
+            <p id="inventarioTexto">Vazio</p>
+        </aside>
+
+        <footer class="rodape-jogo">
+            <button id="btnReiniciar" class="botao-secundario">Reiniciar aventura</button>
+        </footer>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

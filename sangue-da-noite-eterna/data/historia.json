@@ -1,0 +1,488 @@
+    {
+    "capitulos": [
+        {
+        "capitulo": 1,
+        "titulo": "A Marca Sombria",
+        "subtitulo": "Cinzas, sangue e esquecimento",
+        "texto": [
+            "Você desperta sobre a terra queimada.",
+            "A floresta ao seu redor não passa de troncos negros, cinzas úmidas e brasas moribundas. O cheiro de fumaça se mistura ao odor metálico de sangue antigo.",
+            "Sua memória é um vazio.",
+            "Você não sabe de onde veio. Não sabe por que está ferido. Não sabe por que seu braço esquerdo arde como se houvesse fogo sob a pele.",
+            "Quando ergue a manga rasgada, vê a marca: um dragão circular, feito de luz escura e veias vermelhas, pulsando como um segundo coração.",
+            "Ao longe, uivos ecoam entre as árvores mortas.",
+            "Não são lobos.",
+            "Algo está caçando."
+        ],
+        "escolhas": [
+            {
+            "texto": "Levantar-se e seguir na direção dos uivos",
+            "resposta": "Você força o corpo a se levantar. Cada passo dói, mas ficar parado parece ainda pior. Os uivos se aproximam, e a marca em seu braço pulsa como se reconhecesse a ameaça.",
+            "efeitos": {
+                "vida": -5,
+                "corrupcao": 3
+            },
+            "proximoCapitulo": 2
+            },
+            {
+            "texto": "Examinar melhor a marca antes de agir",
+            "resposta": "Você respira fundo e observa a marca. Por um instante, símbolos antigos surgem ao redor dela. Você não entende o idioma, mas sente uma palavra atravessar sua mente: guardião.",
+            "efeitos": {
+                "mana": 10,
+                "item": "Fragmento de memória",
+                "flag": "examinou_marca"
+            },
+            "proximoCapitulo": 3
+            },
+            {
+            "texto": "Procurar algo útil entre as cinzas",
+            "resposta": "Você vasculha os restos carbonizados. Entre ossos, metal retorcido e folhas queimadas, encontra um medalhão rachado com o símbolo de uma torre branca.",
+            "efeitos": {
+                "item": "Medalhão rachado"
+            },
+            "proximoCapitulo": 4
+            }
+        ]
+        },
+        {
+        "capitulo": 2,
+        "titulo": "Os Uivos da Lua Negra",
+        "subtitulo": "Criaturas famintas rondam as árvores mortas",
+        "texto": [
+            "Você segue os uivos até uma clareira coberta por névoa escura.",
+            "No centro dela, três criaturas se alimentam dos restos de um cavalo. Seus corpos lembram lobos, mas suas costelas atravessam a pele e seus olhos brilham com uma luz rubra.",
+            "Quando uma delas ergue a cabeça, você percebe tarde demais: elas não estavam uivando por fome.",
+            "Estavam chamando você.",
+            "A Marca Sombria queima em seu braço. As criaturas recuam por um breve instante, como se temessem aquilo que vive dentro de você."
+        ],
+        "escolhas": [
+            {
+            "texto": "Atacar com a espada enferrujada",
+            "resposta": "Você avança com a espada em mãos. O primeiro golpe acerta uma das criaturas no focinho, mas a lâmina quase se parte. A fera salta sobre você e rasga seu ombro antes de desaparecer na névoa.",
+            "efeitos": {
+                "vida": -20,
+                "corrupcao": 5
+            },
+            "proximoCapitulo": 5
+            },
+            {
+            "texto": "Erguer o braço marcado contra as criaturas",
+            "resposta": "Você ergue o braço. A marca pulsa. Um rugido que não é seu sai de sua garganta, e uma onda de sombra empurra as feras para longe. Por alguns segundos, você sente poder absoluto... e uma fome terrível.",
+            "efeitos": {
+                "mana": -10,
+                "corrupcao": 15,
+                "flag": "usou_poder_sombrio"
+            },
+            "proximoCapitulo": 5
+            },
+            {
+            "texto": "Recuar silenciosamente pela névoa",
+            "resposta": "Você prende a respiração e recua entre os troncos mortos. As criaturas farejam o ar, inquietas, mas a névoa esconde sua fuga. Você escapa sem lutar, embora o medo continue cravado no peito.",
+            "efeitos": {
+                "vida": 0,
+                "corrupcao": 1
+            },
+            "proximoCapitulo": 4
+            }
+        ]
+        },
+        {
+        "capitulo": 3,
+        "titulo": "A Voz Sob a Pele",
+        "subtitulo": "Nem todo poder deseja salvar você",
+        "texto": [
+            "Você se concentra na marca.",
+            "O mundo ao redor desaparece por um instante. As cinzas flutuam no ar como estrelas mortas. Uma voz antiga sussurra dentro da sua mente.",
+            "\"Sangue desperto... selo partido... herdeiro perdido...\"",
+            "Você vê imagens quebradas: uma torre em chamas, uma mulher usando uma coroa de prata, um dragão acorrentado sob montanhas negras e uma porta feita de ossos.",
+            "Então a dor vem.",
+            "Você cai de joelhos enquanto a marca crava uma lembrança em sua alma: alguém apagou sua memória para esconder algo de você."
+        ],
+        "escolhas": [
+            {
+            "texto": "Aceitar a visão e tentar lembrar mais",
+            "resposta": "Você se entrega à visão. A dor aumenta, mas uma palavra surge com clareza: Eldrath. Talvez seja uma cidade, talvez um nome. Seja o que for, a marca quer que você a encontre.",
+            "efeitos": {
+                "mana": -5,
+                "corrupcao": 8,
+                "item": "Nome esquecido: Eldrath",
+                "flag": "viu_eldrath"
+            },
+            "proximoCapitulo": 4
+            },
+            {
+            "texto": "Resistir à voz e bloquear a visão",
+            "resposta": "Você cerra os punhos e força a visão a se romper. A voz recua como uma serpente ferida. Por enquanto, sua mente ainda é sua.",
+            "efeitos": {
+                "mana": 5,
+                "corrupcao": -3,
+                "flag": "resistiu_voz"
+            },
+            "proximoCapitulo": 4
+            }
+        ]
+        },
+        {
+        "capitulo": 4,
+        "titulo": "A Estrada dos Mortos",
+        "subtitulo": "Todo caminho cobra um preço",
+        "texto": [
+            "Você encontra uma antiga estrada de pedra parcialmente coberta por cinzas.",
+            "Carroças destruídas bloqueiam parte do caminho. Corpos foram deixados ali, mas nenhum deles parece ter sido morto por lâminas comuns.",
+            "No chão, marcas de garras seguem em direção ao norte.",
+            "Ao sul, há uma luz fraca tremendo entre as árvores. Talvez uma cabana. Talvez uma armadilha.",
+            "A Lua Negra paira no céu como um olho aberto."
+        ],
+        "escolhas": [
+            {
+            "texto": "Seguir as marcas de garras ao norte",
+            "resposta": "Você segue as marcas pela estrada. Quanto mais avança, mais a marca em seu braço pulsa. O caminho leva a uma ponte antiga, onde símbolos de dragão foram riscados com sangue seco.",
+            "efeitos": {
+                "corrupcao": 4
+            },
+            "proximoCapitulo": 6
+            },
+            {
+            "texto": "Ir até a luz fraca entre as árvores",
+            "resposta": "Você se aproxima da luz e encontra uma cabana torta, protegida por sinos de osso pendurados na porta. Lá dentro, alguém está rezando em voz baixa.",
+            "efeitos": {
+                "mana": 5
+            },
+            "proximoCapitulo": 7
+            },
+            {
+            "texto": "Usar a poção pequena para recuperar forças",
+            "resposta": "Você bebe a poção pequena. O líquido é amargo, mas aquece seu peito e fecha parte dos ferimentos. O frasco vazio se desfaz em suas mãos.",
+            "efeitos": {
+                "vida": 25,
+                "removerItem": "Poção pequena"
+            },
+            "proximoCapitulo": 4
+            }
+        ]
+        },
+        {
+        "capitulo": 5,
+        "titulo": "Sangue na Névoa",
+        "subtitulo": "A primeira batalha deixa marcas",
+        "texto": [
+            "As criaturas recuam, mas não fogem.",
+            "Elas circulam a clareira, esperando seu corpo falhar.",
+            "De repente, uma flecha atravessa a névoa e atinge uma das feras no pescoço. A criatura cai gritando.",
+            "Uma mulher surge entre as árvores, coberta por um manto cinza. Ela carrega um arco negro e uma lâmina curva na cintura.",
+            "\"Se quer sobreviver, pare de sangrar no meio da estrada\", ela diz. \"Essas coisas sentem o cheiro do medo.\"",
+            "Ela olha para seu braço marcado.",
+            "O rosto dela endurece.",
+            "\"Pelos deuses antigos... você não deveria estar vivo.\""
+        ],
+        "escolhas": [
+            {
+            "texto": "Perguntar quem ela é",
+            "resposta": "\"Meu nome é Maerwyn\", ela responde. \"Caço criaturas da Lua Negra desde antes de você aprender a segurar essa espada ridícula. E se essa marca for verdadeira, acabo de encontrar o maior problema de Vharengar.\"",
+            "efeitos": {
+                "item": "Aliança incerta com Maerwyn",
+                "flag": "conheceu_maerwyn"
+            },
+            "proximoCapitulo": 8
+            },
+            {
+            "texto": "Esconder a marca e desconfiar dela",
+            "resposta": "Você tenta cobrir o braço, mas Maerwyn percebe. Ela não força aproximação, apenas mantém a mão perto da lâmina. \"Desconfiança é saudável\", ela diz. \"Mas burrice costuma matar mais rápido.\"",
+            "efeitos": {
+                "corrupcao": 2,
+                "flag": "desconfiou_maerwyn"
+            },
+            "proximoCapitulo": 8
+            }
+        ]
+        },
+        {
+        "capitulo": 6,
+        "titulo": "A Ponte do Dragão Partido",
+        "subtitulo": "O passado ainda sangra nas pedras",
+        "texto": [
+            "A ponte antiga cruza um abismo estreito.",
+            "Nas laterais, estátuas de dragões foram quebradas e jogadas ao chão. Alguém profanou este lugar há pouco tempo.",
+            "No centro da ponte há um cadáver ajoelhado, segurando um pergaminho contra o peito.",
+            "Quando você se aproxima, a Marca Sombria reage.",
+            "As letras do pergaminho se acendem em vermelho."
+        ],
+        "escolhas": [
+            {
+            "texto": "Ler o pergaminho",
+            "resposta": "O texto diz: \"Quando a chave despertar, o sangue antigo chamará tanto o guardião quanto o monstro. Não confie na voz sob a pele.\" Ao terminar a leitura, o pergaminho vira cinzas.",
+            "efeitos": {
+                "mana": 10,
+                "item": "Aviso do Guardião Morto",
+                "flag": "leu_pergaminho"
+            },
+            "proximoCapitulo": 8
+            },
+            {
+            "texto": "Ignorar o pergaminho e atravessar rápido",
+            "resposta": "Você atravessa a ponte sem tocar no corpo. Atrás de você, as estátuas quebradas rangem como se lamentassem sua escolha.",
+            "efeitos": {
+                "corrupcao": 3
+            },
+            "proximoCapitulo": 8
+            }
+        ]
+        },
+        {
+        "capitulo": 7,
+        "titulo": "A Cabana dos Sinos de Osso",
+        "subtitulo": "Algumas respostas vivem na boca dos loucos",
+        "texto": [
+            "Dentro da cabana, uma velha está sentada diante de dezenas de velas vermelhas.",
+            "Ela não se assusta ao ver você.",
+            "\"A Marca chegou andando\", ela sussurra. \"Então o selo já começou a morrer.\"",
+            "Seus olhos são completamente brancos.",
+            "\"Você procura memória, mas deveria procurar medo. A memória mostra o passado. O medo mostra a verdade.\""
+        ],
+        "escolhas": [
+            {
+            "texto": "Pedir ajuda à velha",
+            "resposta": "A velha toca sua testa com dois dedos frios. Você vê o Coração do Mundo: um abismo vermelho, correntes rompidas e uma sombra coroada abrindo os olhos. Quando a visão termina, ela entrega a você uma pedra escura.",
+            "efeitos": {
+                "item": "Pedra da Vigília",
+                "mana": 15,
+                "corrupcao": 5,
+                "flag": "recebeu_pedra"
+            },
+            "proximoCapitulo": 8
+            },
+            {
+            "texto": "Ameaçá-la para obter respostas",
+            "resposta": "Você segura o cabo da espada. A velha sorri, mas não parece com medo. \"A sombra gosta quando você escolhe a força antes da razão.\" A marca pulsa satisfeita.",
+            "efeitos": {
+                "corrupcao": 12,
+                "flag": "ameacou_velha"
+            },
+            "proximoCapitulo": 8
+            },
+            {
+            "texto": "Sair sem aceitar ajuda",
+            "resposta": "Você deixa a cabana. Atrás de você, os sinos de osso começam a tocar sozinhos. A velha grita uma última frase: \"Quando ouvir seu próprio nome vindo da escuridão, não responda!\"",
+            "efeitos": {
+                "corrupcao": 1
+            },
+            "proximoCapitulo": 8
+            }
+        ]
+        },
+        {
+        "capitulo": 8,
+        "titulo": "O Chamado de Eldrath",
+        "subtitulo": "A jornada verdadeira começa",
+        "texto": [
+            "A noite se aprofunda.",
+            "Seja pela estrada, pela ponte ou pela cabana, todos os caminhos parecem levar à mesma direção.",
+            "Eldrath.",
+            "O nome surge em sua mente como uma ferida aberta.",
+            "Ao longe, além das colinas, uma torre branca aparece no horizonte. Mesmo destruída, ela brilha sob a Lua Negra.",
+            "A Marca Sombria pulsa.",
+            "Então você ouve uma voz.",
+            "Não a voz da marca.",
+            "Uma voz humana.",
+            "\"{heroi}... volte para casa.\"",
+            "Você não sabe quem chamou.",
+            "Mas sabe que reconhece aquela voz."
+        ],
+        "escolhas": [
+            {
+            "texto": "Seguir imediatamente para Eldrath",
+            "resposta": "Você aperta o cabo da espada e caminha em direção à torre. Cada passo aproxima você das respostas — e talvez daquilo que apagou sua memória.",
+            "efeitos": {
+                "flag": "rumo_eldrath"
+            },
+            "proximoCapitulo": 9
+            },
+            {
+            "texto": "Parar e tentar responder à voz",
+            "resposta": "Você sussurra uma resposta. O vento para. Por um segundo, a Lua Negra parece olhar diretamente para você. Algo do outro lado sorri.",
+            "efeitos": {
+                "corrupcao": 10,
+                "flag": "respondeu_voz"
+            },
+            "proximoCapitulo": 9
+            },
+            {
+            "texto": "Resistir ao chamado e descansar antes de continuar",
+            "resposta": "Você se afasta da estrada e encontra abrigo entre pedras antigas. O descanso é curto, mas necessário. Pela primeira vez desde que acordou, a marca pulsa mais devagar.",
+            "efeitos": {
+                "vida": 15,
+                "corrupcao": -5
+            },
+            "proximoCapitulo": 9
+            }
+        ]
+        },
+        {
+        "capitulo": 9,
+        "titulo": "Portões de Eldrath",
+        "subtitulo": "A cidade morta reconhece seu sangue",
+        "texto": [
+            "Ao amanhecer, você chega aos portões de Eldrath.",
+            "A cidade está em ruínas.",
+            "Bandeiras rasgadas balançam em torres quebradas. Estátuas sem rosto observam a entrada. No arco principal, há o mesmo símbolo do medalhão rachado: uma torre branca cercada por asas de dragão.",
+            "Quando você se aproxima, os portões se abrem sozinhos.",
+            "Uma inscrição surge na pedra:",
+            "\"Somente o sangue do guardião pode entrar.\"",
+            "Seu coração acelera.",
+            "Talvez você não tenha sido escolhido pela marca.",
+            "Talvez ela sempre tenha pertencido a você."
+        ],
+        "escolhas": [
+            {
+            "texto": "Entrar pelos portões de Eldrath",
+            "resposta": "Você atravessa os portões. Atrás de você, eles se fecham com um estrondo. Dentro da cidade morta, sinos começam a tocar, anunciando seu retorno.",
+            "efeitos": {
+                "flag": "entrou_eldrath"
+            },
+            "proximoCapitulo": 10
+            },
+            {
+            "texto": "Usar o Medalhão rachado no portão",
+            "resposta": "Você encosta o medalhão na inscrição. A relíquia vibra e projeta uma memória: você, ainda criança, correndo por estes mesmos portões enquanto alguém gritava para esconder a chave.",
+            "efeitos": {
+                "mana": 10,
+                "corrupcao": -5,
+                "flag": "usou_medalhao"
+            },
+            "proximoCapitulo": 10
+            },
+            {
+            "texto": "Recuar e observar antes de entrar",
+            "resposta": "Você espera. Nas janelas quebradas, sombras se movem. A cidade sabe que você chegou. E algo dentro dela perdeu a paciência.",
+            "efeitos": {
+                "corrupcao": 4
+            },
+            "proximoCapitulo": 10
+            }
+        ]
+        },
+        {
+        "capitulo": 10,
+        "titulo": "A Câmara da Memória",
+        "subtitulo": "Nem toda verdade liberta",
+        "texto": [
+            "No centro de Eldrath, você encontra uma câmara subterrânea escondida sob a torre branca.",
+            "As paredes são cobertas por nomes.",
+            "Centenas deles.",
+            "Todos pertencem aos guardiões que carregaram a Marca do Dragão Sombrio antes de você.",
+            "No fundo da sala, um espelho negro desperta.",
+            "Seu reflexo aparece, mas não está sozinho.",
+            "Atrás de você, no vidro, surge uma figura coroada por sombras.",
+            "Nyxar.",
+            "\"Finalmente\", ele sussurra. \"Minha chave voltou.\""
+        ],
+        "escolhas": [
+            {
+            "texto": "Quebrar o espelho imediatamente",
+            "resposta": "Você golpeia o espelho com toda a força. O vidro se parte, e um grito antigo atravessa a câmara. A conexão com Nyxar enfraquece, mas a explosão de magia lança você contra a parede.",
+            "efeitos": {
+                "vida": -25,
+                "mana": -10,
+                "corrupcao": -10,
+                "flag": "quebrou_espelho"
+            },
+            "proximoCapitulo": 11
+            },
+            {
+            "texto": "Ouvir o que Nyxar tem a dizer",
+            "resposta": "Nyxar sorri no reflexo. \"Eles mentiram para você. Guardião não é aquele que prende o monstro. Guardião é aquele que alimenta a prisão com o próprio sangue.\" A verdade pesa mais que qualquer ferimento.",
+            "efeitos": {
+                "corrupcao": 15,
+                "mana": 10,
+                "flag": "ouviu_nyxar"
+            },
+            "proximoCapitulo": 11
+            },
+            {
+            "texto": "Tocar a Marca e buscar sua própria memória",
+            "resposta": "Você ignora Nyxar e toca a marca. A câmara inteira se ilumina. Você se vê criança, sendo levado às pressas por uma mulher de coroa prateada. Ela chora ao selar sua memória. Ela era sua mãe.",
+            "efeitos": {
+                "item": "Memória da Rainha",
+                "corrupcao": -8,
+                "flag": "lembrou_mae"
+            },
+            "proximoCapitulo": 11
+            }
+        ]
+        },
+        {
+        "capitulo": 11,
+        "titulo": "A Escolha do Guardião",
+        "subtitulo": "Sangue, selo e destino",
+        "texto": [
+            "A Câmara da Memória começa a ruir.",
+            "O selo de Nyxar está mais fraco do que qualquer um imaginava.",
+            "Agora você entende: a Marca Sombria não é apenas um poder.",
+            "É uma chave viva.",
+            "Ela pode reforçar a prisão do Deus-Vampiro.",
+            "Pode quebrá-la para sempre.",
+            "Ou pode ser transformada em algo novo.",
+            "Pela primeira vez, a escolha é realmente sua."
+        ],
+        "escolhas": [
+            {
+            "texto": "Usar seu sangue para reforçar o selo de Nyxar",
+            "resposta": "Você crava a espada na própria palma e deixa o sangue cair sobre a marca. A dor é brutal. O selo responde. Nas profundezas do mundo, Nyxar grita enquanto as correntes voltam a se fechar. Você sobrevive, mas sente que parte de sua vida ficará para sempre presa no abismo.",
+            "efeitos": {
+                "vida": -35,
+                "corrupcao": -20,
+                "flag": "reforcou_selo"
+            },
+            "proximoCapitulo": 12
+            },
+            {
+            "texto": "Aceitar o poder de Nyxar para destruir seus inimigos",
+            "resposta": "Você abre a mente para a voz sombria. O poder entra como uma tempestade de sangue. Por um instante, você vê todos os inimigos de Vharengar ajoelhados. Mas quando sorri, não sabe se o sorriso ainda é seu.",
+            "efeitos": {
+                "vida": 20,
+                "mana": 30,
+                "corrupcao": 35,
+                "flag": "aceitou_nyxar"
+            },
+            "proximoCapitulo": 12
+            },
+            {
+            "texto": "Tentar purificar a Marca com sua própria vontade",
+            "resposta": "Você se recusa a ser chave, prisão ou servo. Segura a marca com a outra mão e força sua vontade contra a sombra. A dor quase parte sua alma, mas uma luz antiga desperta dentro do símbolo do dragão.",
+            "efeitos": {
+                "vida": -20,
+                "mana": -20,
+                "corrupcao": -15,
+                "flag": "purificou_marca"
+            },
+            "proximoCapitulo": 12
+            }
+        ]
+        },
+        {
+        "capitulo": 12,
+        "titulo": "Ecos da Noite Eterna",
+        "subtitulo": "Todo final deixa uma cicatriz",
+        "texto": [
+            "Quando a luz desaparece, Eldrath está em silêncio.",
+            "A Lua Negra ainda paira no céu, mas seu brilho parece menor.",
+            "Você não sabe se venceu.",
+            "Não completamente.",
+            "Nyxar ainda existe nas profundezas, mas agora ele sabe seu nome.",
+            "E você sabe o dele.",
+            "A Marca Sombria permanece em seu braço, alterada por suas escolhas.",
+            "Vharengar não foi salva nesta noite.",
+            "Mas ganhou tempo.",
+            "E, às vezes, tempo é tudo que um mundo moribundo precisa para encontrar esperança."
+        ],
+        "escolhas": [
+            {
+            "texto": "Encerrar esta parte da aventura",
+            "resposta": "Fim do Ato I. As escolhas de {heroi} moldaram a Marca Sombria. A próxima jornada revelará se Vharengar terá um salvador, um mártir... ou um novo senhor das sombras.",
+            "efeitos": {},
+            "proximoCapitulo": 0
+            }
+        ]
+        }
+    ]
+    }
